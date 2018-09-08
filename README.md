@@ -25,7 +25,7 @@ cd project/path
 ```
 Then we run the script from the command line ...
 
-``` r
+``` julia
 $ julia popularity_linear_regression.jl
 
 ### READING DATA ###
