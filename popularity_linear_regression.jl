@@ -54,3 +54,4 @@ df = melt(df, :epoch);
 plt = plot(df, x = :epoch, y = :value, color = :variable, Geom.line);
 draw(PNG("loss_plot.png", 6inch, 5inch), plt)
 println("# a loss plot has been saved into your directory")
+
