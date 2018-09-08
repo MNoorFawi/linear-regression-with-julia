@@ -8,7 +8,7 @@ We will try to predict Online News Popularity fitting Linear Regression with **K
 ###### N.B. we'll be using Julia version 0.6.4
 First we download the zip data file, unzip it and then move the csv file to the project directory which contains the script...
 
-``` r
+``` julia
 wget https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsPopularity.zip 
 
 ## or with 
@@ -25,7 +25,7 @@ cd project/path
 ```
 Then we run the script from the command line ...
 
-``` r
+``` julia
 $ julia popularity_linear_regression.jl
 
 ### READING DATA ###
