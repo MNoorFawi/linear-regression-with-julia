@@ -28,9 +28,9 @@ lossgradient = grad(loss); # lossgradient returns dw, the gradient of the loss
 function train(w, data; lr = 0.25) # lr learning rate
     for (x, y) in data
         dw = lossgradient(w, x, y)
-    for i in 1:length(w)
-        w[i] -= lr * dw[i]
-    end     
+        for i in 1:length(w)
+           w[i] -= lr * dw[i]
+        end     
     end
     return w
 end;
