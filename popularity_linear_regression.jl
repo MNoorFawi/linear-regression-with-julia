@@ -34,7 +34,7 @@ function train(w, data; lr = 0.25) # lr learning rate
     end
     return w
 end;
-w = Any[0.1 * randn(1, 58), 0.0 ]; # initial coefficients of 58 variables and the intercept
+w = Any[0.1 * randn(Float32, 1, 58), zeros(Float32, 1, 1)]; # initial coefficients of 58 variables and the intercept
 train_loss = [];
 test_loss = [];
 println("")
